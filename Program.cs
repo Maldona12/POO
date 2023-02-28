@@ -3,19 +3,17 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
-    }
-}
+        Persona persona = new Persona();
+        persona.Saludar();
 
-public class Persona
-{
-    // Aquí irían las propiedades y métodos de la clase Persona
-}
+        Estudiante estudiante = new Estudiante();
+        estudiante.SetEdad(19);
+        estudiante.MostrarEdad();
+        estudiante.Estudiar();
 
-public class Profesor : Persona
-{
-    public void Explicar()
-    {
-        Console.WriteLine("Estoy explicando");
+        Profesor profe = new Profesor();
+        profe.SetEdad(100);
+        profe.Saludar();
+        profe.Explicar();
     }
 }

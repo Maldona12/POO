@@ -10,10 +10,3 @@ class Persona
         this.edad=edad;
    }
 }
-public class Profesor : Persona
-{
-    public void Explicar()
-    {
-        Console.WriteLine("Estoy explicando");
-    }
-}
